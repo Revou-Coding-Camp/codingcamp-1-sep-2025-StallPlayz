@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My To-Do List</title>
+
+    <!-- ===================================
+                     LINK CSS
+         =================================== -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- ===================================
+                     LINK CSS
+         =================================== -->
+
+    <!-- ===================================
+                    LINK LIBRARY JS
+         =================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- ===================================
+                    LINK LIBRARY JS
+         =================================== -->
+  </head>
+  <body>
+    <!-- ===================================
+                     HEADER
+         =================================== -->
+    <header>
+      <div class="container">
+        <h1>📝 My To-Do List</h1>
+        <p>Kelola keseharian anda dengan mudah</p>
+      </div>
+    </header>
+    <!-- ===================================
+                     HEADER
+         =================================== -->
+
+    <!-- ===================================
+                    MAIN CONTENT
+         =================================== -->
+    <main>
+      <div class="container">
+        <!-- Todo Container - Menggabungkan form dan list -->
+        <div class="todo-container">
+          <!-- Form untuk menambah task -->
+          <form class="add-task-form" id="addTaskForm">
+            <div class="form-group">
+              <label for="taskInput">Tugas *</label>
+              <input
+                type="text"
+                id="taskInput"
+                placeholder="Tambahkan tugas baru..."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="dateInput">Tanggal</label>
+              <input type="date" id="dateInput" />
+            </div>
+            <button type="submit" id="addBtn">Tambah</button>
+          </form>
+          <!-- Form untuk menambah task -->
+
+          <!-- Filter Controls -->
+          <div class="filter-controls">
+            <div class="filter-group">
+              <label for="filterSelect">Filter:</label>
+              <select class="filter-dropdown" id="filterSelect">
+                <option value="all">Semua</option>
+                <option value="active">Aktif</option>
+                <option value="completed">Selesai</option>
+              </select>
+            </div>
+            <button id="deleteAllBtn">🗑️ Hapus Semua</button>
+          </div>
+          <!-- Filter Controls -->
+
+          <!-- Task counter -->
+          <div class="task-counter">
+            <span id="taskCount">0 tugas</span>
+          </div>
+          <!-- Task counter -->
+
+          <!-- Task list -->
+          <div class="task-list" id="taskList">
+            <!-- Task akan ditambahkan secara dinamis disini -->
+          </div>
+          <!-- Task list -->
+
+          <!-- Empty state -->
+          <div class="empty-state" id="emptyState">
+            <p>📋 Belum ada tugas. Tambahkan tugas pertama Anda!</p>
+          </div>
+        </div>
+        <!-- Todo Container - Menggabungkan form dan list -->
+      </div>
+    </main>
+    <!-- ===================================
+                    MAIN CONTENT
+         =================================== -->
+
+    <!-- ===================================
+                     FOOTER
+         =================================== -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 To-Do List App. Dibuat oleh Gusano Deseda | StallPlayz
+        </p>
+      </div>
+    </footer>
+    <!-- ===================================
+                     FOOTER
+         =================================== -->
+
+    <!-- ===================================
+                     LINK SCRIPT
+         =================================== -->
+    <script src="js/script.js"></script>
+    <!-- ===================================
+                     LINK SCRIPT
+         =================================== -->
+  </body>
+</html>
